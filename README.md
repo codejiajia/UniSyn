@@ -31,3 +31,19 @@ The following data and model checkpoints are available at [zenodo](https://zenod
 - `data/Unseen`: Contains training, validation, and test sets for the CellOut, DrugPairOut, and BothOut scenarios.
 - `data/PaccMann`:Contains the list of genes associated with drug sensitivity.
 - `checkpoints/Pretained`: Pretrained model checkpoints for monotherapy response and drug synergy prediction.
+
+### Usage
+#### 1. Pre-training
+- Trainmonotherapy response and drug synergy prediction models.
+  ```python
+   python main.py --split_flag = 1 train_flag = 1
+   ```
+#### 2. Monotherapy and Synergy Prediction
+  ```python
+   python main.py --test_flag = 1
+   ```
+#### 3. Unseen Scenario Prediction
+```python
+# Load training, validation, and test sets from the data/Unseen directory
+   python main.py --split_flag = 0
+   ```
