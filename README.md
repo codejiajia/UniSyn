@@ -4,3 +4,8 @@ This repository contains the source code for the paper
 <br/>
 Please see our manuscript for more details.<br/>
 ## Installation
+1. Clone the repository.
+
+   ```python
+   git clone https://github.com/codejiajia/UniSyn.git
+   ```
