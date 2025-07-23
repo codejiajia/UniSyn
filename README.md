@@ -3,7 +3,7 @@ This repository contains the source code for the paper
 ![image](./model.png)
 <br/>
 Please see our manuscript for more details.<br/>
-## Installation
+### Installation
 1. Clone the repository.
 
    ```python
@@ -20,3 +20,5 @@ Please see our manuscript for more details.<br/>
    conda install pytorch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 pytorch-cuda=12.1 -c pytorch -c nvidia -c pytorch # for CUDA 12.1
    pip install -r requirements.txt
    ```
+### Data and model checkpoints
+The following data and model checkpoints are available at [zenodo](https://zenodo.org/records/16352141).
