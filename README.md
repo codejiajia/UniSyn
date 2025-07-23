@@ -34,8 +34,8 @@ The following data and model checkpoints are available at [zenodo](https://zenod
 
 ### Usage
 #### 1. Pre-training
-- Trainmonotherapy response and drug synergy prediction models.
   ```python
+#Train monotherapy response and drug synergy prediction models.
    python main.py --split_flag = 1 train_flag = 1
    ```
 #### 2. Monotherapy and Synergy Prediction
