@@ -9,3 +9,8 @@ Please see our manuscript for more details.<br/>
    ```python
    git clone https://github.com/codejiajia/UniSyn.git
    ```
+2. Create a virtual environment by conda.
+
+   ```python
+   conda create -n UniSyn_env python=3.8.20
+   conda activate UniSyn_env
