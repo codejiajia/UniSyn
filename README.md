@@ -54,5 +54,5 @@ To prepare the input data for model training, run the following Jupyter notebook
 #### 4. Unseen Scenario Prediction
 ```python
 # Load training, validation, and test sets from the data/Unseen directory
-   python main.py --split_flag = 0
+   python main.py --split_mode = [1,2,3,4] #1:normal,2:drugout,3:cellout, 4:bothout
    ```
