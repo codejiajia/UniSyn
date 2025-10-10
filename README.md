@@ -35,8 +35,13 @@ The following data and model checkpoints are available at [zenodo](https://zenod
 
 ### Usage
 #### 1. Preprocessing
-To prepare the input data for model training, run the following Jupyter notebooks in order.Each notebook performs a specific preprocessing step on the DrugComb dataset and its associated drug/cell line features:
+To prepare the input data for model training, run the following Jupyter notebooks and scripts in order. Each file performs a specific preprocessing step on the `DrugComb dataset` and its associated drug/cell line features:
 - `1.dataset_preprocessing.ipynb`：Clean and format the raw DrugComb dataset for feature generation and training.
+- `2.drug_fingerprint.ipynb`：Generate drug molecular fingerprints features.
+- `3.cellfeature_preprocessing.ipynb`：Extract and normalize cell line omics features including gene expression, mutation, and CNV.
+- `4.String_to_Int.ipynb`:Convert categorical identifiers (drug and cell line names) into integer indices.
+- `5.drug_feature_graph.ipynb`:Transforms drug SMILES sequences into graph structured data for graph neural network modeling.
+- `6.drug_seq.py`: Generate drug sequence representations.
 #### 2. Pre-training
   ```python
 #Train monotherapy response and drug synergy prediction models.
