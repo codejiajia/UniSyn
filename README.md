@@ -21,7 +21,7 @@ Please see our manuscript for more details.<br/>
    pip install -r requirements.txt
    ```
 ### Data and model checkpoints
-The following data and model checkpoints are available at [zenodo](https://zenodo.org/records/16352141).
+The following data and model checkpoints are available at [zenodo](https://zenodo.org/records/17313540).
 
 - `data/drugcomb`: The curated datasets for monotherapy response and drug synergy prediction are derived from DrugComb `data_to_split.csv`.Each drug is associated with three raw data modalities: fingerprints `Drug_use.csv`, SMILES sequences `drug_sequence_em.csv`, and molecular graphs `drug_feature_graph.npy`. The file `Drug_map.npy` provides the mapping between drug indices and names. Each cell line includes gene expression `Cell_use_zscore.csv`, somatic mutation `mutation.csv`, and copy number variation `nv_zscore.csv` data.
 - `data/O'Neil`:The O'Neil dataset follows the same structure as DrugComb, containing matched files for monotherapy response, drug synergy prediction, and multi-modal features of both drugs and cell lines.
