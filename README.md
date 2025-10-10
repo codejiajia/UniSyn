@@ -30,19 +30,23 @@ The following data and model checkpoints are available at [zenodo](https://zenod
 - `data/CTRPv2`:Drugs for prospective synergy prediction, including drug name, status, SMILES, and other metadata.
 - `data/Unseen`: Contains training, validation, and test sets for the CellOut, DrugPairOut, and BothOut scenarios.
 - `data/PaccMann`:Contains the list of genes associated with drug sensitivity.
+- `data/Preprocessing`: Contains all data required for generating standardized datasets and corresponding drug and cell line features derived from preprocessing the DrugComb dataset.
 - `checkpoints/Pretained`: Pretrained model checkpoints for monotherapy response and drug synergy prediction.
 
 ### Usage
-#### 1. Pre-training
+#### 1. Preprocessing
+To prepare the input data for model training, run the following Jupyter notebooks in order.Each notebook performs a specific preprocessing step on the DrugComb dataset and its associated drug/cell line features:
+- `1.dataset_preprocessing.ipynb`：Clean and format the raw DrugComb dataset for feature generation and training.
+#### 2. Pre-training
   ```python
 #Train monotherapy response and drug synergy prediction models.
    python main.py --split_flag = 1 train_flag = 1
    ```
-#### 2. Monotherapy and Synergy Prediction
+#### 3. Monotherapy and Synergy Prediction
   ```python
    python main.py --test_flag = 1
    ```
-#### 3. Unseen Scenario Prediction
+#### 4. Unseen Scenario Prediction
 ```python
 # Load training, validation, and test sets from the data/Unseen directory
    python main.py --split_flag = 0
