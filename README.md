@@ -52,11 +52,11 @@ To prepare the input data for model training, run the following Jupyter notebook
    python main.py --test_flag = 1
    ```
 #### 4. Unseen Scenario Prediction
+To re-generate datasets for different scenarios:
    ```python
-#To re-generate datasets for different scenarios
    python main.py --split_flag=1 split_mode = [1,2,3,4] #1:normal,2:drugout,3:cellout, 4:bothout
    ```
+To load pre-generated training, validation, and test sets from the data/Unseen/ directory:
    ```python
-#To load pre-generated training, validation, and test sets from the data/Unseen/ directory
   python main.py --split_flag=0
    ```
